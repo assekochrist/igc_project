@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ff7a00;
+}
+
+nav button {
+    background: #ff7a00;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background: #e56b00;
+}
+/* HERO */
+/* HERO MODERNE */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('/img/background2_car.png') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Overlay sombre */
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Contenu */
+.hero-content {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Texte */
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Bouton principal */
+.cta {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff7a00;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #e56b00;
+}
+
+/* Boutons gauche */
+.left-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Boutons */
+.btn {
+    padding: 16px 30px;   /* ⬅️ augmenté */
+    border-radius: 30px;  /* ⬅️ plus arrondi */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;      /* ⬅️ texte plus lisible */
+    transition: 0.3s;
+}
+
+/* Connexion */
+.login {
+    background: white;
+    color: #ff7a00;
+}
+
+/* Inscription */
+.register {
+    background: #009e60;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.login:hover {
+    background: #f2f2f2;
+}
+
+.register:hover {
+    background: #007a4a;
+}
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.cta {
+    margin-top: 30px;
+    padding: 18px 40px;   /* ⬅️ plus grand */
+    background: #ff7a00;
+    border: none;
+    color: white;
+    font-size: 18px;      /* ⬅️ texte plus gros */
+    border-radius: 35px;  /* ⬅️ plus arrondi */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #e56b00;
+    transform: scale(1.05);  /* ⬅️ effet moderne */
+}
+
+.cta {
+    box-shadow: 0 8px 20px rgba(255, 122, 0, 0.4);
+}
+
+/* ROLES */
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: #009e60;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #009e60;
+    color: white;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    margin: 120px auto;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 0.4s;
+}
+
+.modal input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal button {
+    background: #009e60;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* SECTION VOYAGES */
+.weekly-trips {
+    padding: 60px 40px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.weekly-trips h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #009e60;
+}
+
+/* Container */
+.trips-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Carte */
+.trip-card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.trip-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Texte */
+.trip-card h3 {
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+.trip-card p {
+    margin: 5px 0;
+}
+
+/* Prix */
+.price {
+    font-weight: bold;
+    color: #009e60;
+    margin: 10px 0;
+}
+
+/* Bouton */
+.trip-card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff7a00;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.trip-card button:hover {
+    background: #e56b00;
+}
+
+.footer {
+    background: #009e60;
+    color: white;
+    padding: 40px 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    width: 220px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Liens */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Réseaux */
+.socials a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+}
